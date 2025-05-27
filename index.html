@@ -8,89 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary: #00629B;      /* 메인 색상 */
-      --secondary: #009DDC;    /* 포인트 색상 */
-      --bg: #f5f7fa;          /* 배경 색상 */
-      --card-bg: #ffffff;      /* 카드 배경 */
-      --radius: 12px;         /* 모서리 둥글기 */
-      --shadow: 0 4px 10px rgba(0, 0, 0, .1); /* 그림자 */
+      --primary: #00629B;
+      --secondary: #009DDC;
+      --bg: #f5f7fa;
+      --card-bg: #ffffff;
+      --radius: 12px;
+      --shadow: 0 4px 10px rgba(0, 0, 0, .1);
     }
-    * {
-      box-sizing: border-box;
-      font-family: "Noto Sans KR", sans-serif;
-    }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: #333;
-    }
-    header {
-      background: var(--primary);
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.25rem;
-      color: var(--primary);
-    }
-    .card p {
-      flex-grow: 1;
-      margin: 0 0 1rem 0;
-      font-size: 0.9rem;
-      line-height: 1.4em;
-      color: #555;
-    }
-    .card a {
-      align-self: flex-start;
-      background: var(--secondary);
-      color: #fff;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius);
-      font-weight: 700;
-    }
-    .card a:hover {
-      filter: brightness(1.1);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.8rem;
-      color: #777;
-    }
-    /* 새로운 툴을 추가하려면 아래 주석 지침을 참고하세요 */
+    * { box-sizing: border-box; font-family: "Noto Sans KR", sans-serif; }
+    body { margin: 0; background: var(--bg); color: #333; }
+    header { background: var(--primary); color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0.5rem 0 0; font-size: 1rem; opacity: 0.9; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card h2 { margin-top: 0; font-size: 1.25rem; color: var(--primary); }
+    .card p { flex-grow: 1; margin: 0 0 1rem 0; font-size: 0.9rem; line-height: 1.4em; color: #555; }
+    .card a { align-self: flex-start; background: var(--secondary); color: #fff; text-decoration: none; padding: 0.5rem 1rem; border-radius: var(--radius); font-weight: 700; }
+    .card a:hover { filter: brightness(1.1); }
+    footer { text-align: center; padding: 1rem; font-size: 0.8rem; color: #777; }
   </style>
 </head>
 <body>
@@ -100,7 +37,6 @@
   </header>
 
   <main class="container">
-    <!-- ✨ 예시 카드 시작 -->
     <div class="card">
       <h2>주간 업무보고</h2>
       <p>팀별 주간 업무를 기록하고 공유하는 간단한 웹앱</p>
@@ -116,25 +52,14 @@
     <div class="card">
       <h2>개인고객 상담관리</h2>
       <p>상담 기록 및 후속 조치를 손쉽게 관리</p>
-      <a href="https://dy-edu.github.io/personal-crm/" target="_blank" rel="noopener">바로가기 →</a>
+      <a href="https://suseed.github.io/cunsultPerson/" target="_blank" rel="noopener">바로가기 →</a>
     </div>
 
     <div class="card">
       <h2>기업고객 상담관리</h2>
       <p>기업 고객 상담 내역과 진행 상황을 통합 관리</p>
-      <a href="https://dy-edu.github.io/corporate-crm/" target="_blank" rel="noopener">바로가기 →</a>
+      <a href="https://suseed.github.io/consultCompany/" target="_blank" rel="noopener">바로가기 →</a>
     </div>
-    <!-- ✨ 예시 카드 끝 -->
-
-    <!--
-      ▽ 새 툴을 추가하려면 아래 주석 블록을 복사해 필요한 부분만 수정하세요 ▽
-
-      <div class="card">
-        <h2>툴 이름</h2>
-        <p>툴 설명을 간략히 적어주세요</p>
-        <a href="https://your-github-pages-link" target="_blank" rel="noopener">바로가기 →</a>
-      </div>
-    -->
   </main>
 
   <footer>
